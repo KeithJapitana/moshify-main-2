@@ -32,14 +32,21 @@
 // const age3 = caclAge3(1991);
 // console.log(age3);
 
-const yearsUntilRetirement = (birthYear) => {
-  const age = 2037 - birthYear;
-  const retirement = 65 - age;
-  return retirement;
-};
-const ageInput = yearsUntilRetirement(1991);
-console.log(ageInput);
-ageInput <= 0 ? console.log(`reitred`) : console.log(`not retired`);
+// const yearsUntilRetirement = (birthYear) => {
+//   const age = 2037 - birthYear;
+//   const retirement = 65 - age;
+//   return retirement;
+// };
+// const ageInput = yearsUntilRetirement(1991);
+// console.log(ageInput);
+// ageInput <= 0 ? console.log(`reitred`) : console.log(`not retired`);
 
-// console.log(`Remaining years until you retire is ${ageInput});
-//
+// // console.log(`Remaining years until you retire is ${ageInput});
+// //
+
+const collapsible = document.querySelectorAll(".collapsible");
+collapsible.forEach((item) =>
+  item.addEventListener("click", function () {
+    this.classList.toggle("collapsible--expanded");
+  })
+);
